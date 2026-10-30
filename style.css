@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font: 17px/1.6 Arial, sans-serif;
+    color: #202638;
+    background: #f4f6fb;
+}
+
+header, main, footer {
+    max-width: 960px;
+    margin: auto;
+    padding: 25px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d9deeb;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #294ee0;
+}
+
+.badge {
+    font-size: 13px;
+    color: #606a7c;
+}
+
+main {
+    display: flex;
+    gap: 65px;
+    align-items: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.text {
+    flex: 1;
+}
+
+h1 {
+    font-size: 45px;
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+    margin: 0 0 20px;
+}
+
+h2 {
+    font-size: 21px;
+    margin: 28px 0 10px;
+}
+
+p {
+    margin: 0 0 16px;
+}
+
+ul {
+    padding-left: 22px;
+    margin: 0;
+}
+
+li {
+    padding-bottom: 9px;
+}
+
+.note {
+    font-size: 14px;
+    color: #606a7c;
+    margin-top: 24px;
+}
+
+figure {
+    margin: 0;
+    width: 260px;
+    flex-shrink: 0;
+}
+
+.screen
+ {
+    aspect-ratio: 1080 / 2200;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 12px 28px #20263820;
+}
+
+.screen img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: -12.592593%;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 12px;
+    color: #606a7c;
+    margin-top: 12px;
+}
+
+footer {
+    border-top: 1px solid #d9deeb;
+    font-size: 12px;
+    color: #606a7c;
+}
+
+@media (max-width: 650px) {
+    main {
+        flex-direction: column;
+        gap: 30px;
+        align-items: flex-start;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    figure {
+        align-self: center;
+        width: 245px;
+    }
+
+}
+
+.download-button {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 12px 22px;
+    border-radius: 8px;
+    background: #294ee0;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.download-button:hover {
+    background: #1f3db3;
+}
+
+.download-button:focus-visible {
+    outline: 3px solid #202638;
+    outline-offset: 4px;
+}
